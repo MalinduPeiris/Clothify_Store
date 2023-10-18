@@ -10,11 +10,11 @@ import java.io.IOException;
 
 import static javafx.fxml.FXMLLoader.load;
 
-public class ItemController {
+public class OrderController {
     private Stage stage;
     private Scene scene;
     private Parent parent;
-    public void BackbtnItemForm(ActionEvent actionEvent) throws IOException {
+    public void BackbtnOrderForm(ActionEvent actionEvent) throws IOException {
         parent= load(getClass().getResource("/view/clothifyHome.fxml"));
         stage= (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
         scene=new Scene(parent);

@@ -74,12 +74,22 @@ public class clothifyHomeController {
     }
 
     public void ItembtnClothifyHome(ActionEvent actionEvent) throws IOException {
-        parent= load(getClass().getResource("/view/SalesReturn.fxml"));
+        parent= load(getClass().getResource("/view/item.fxml"));
         stage= (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
         scene=new Scene(parent);
 
         stage.setScene(scene);
         stage.show();
 
+    }
+
+
+    public void OrderbtnClothifyHome(ActionEvent actionEvent) throws IOException {
+        parent= load(getClass().getResource("/view/Order.fxml"));
+        stage= (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+        scene=new Scene(parent);
+
+        stage.setScene(scene);
+        stage.show();
     }
 }

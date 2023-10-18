@@ -4,7 +4,6 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.effect.Blend?>
 <?import javafx.scene.effect.Bloom?>
-<?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -46,7 +45,7 @@
             <Font name="System Bold" size="19.0" />
          </font>
       </JFXButton>
-      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#fbffb18f" height="369.0" layoutX="86.0" layoutY="374.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1025.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#a9a9a88f" height="369.0" layoutX="86.0" layoutY="374.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1025.0" />
       <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#ffffffb5" height="237.0" layoutX="85.0" layoutY="117.0" stroke="TRANSPARENT" strokeType="INSIDE" width="385.0" />
       <ComboBox layoutX="150.0" layoutY="131.0" prefHeight="31.0" prefWidth="246.0" promptText="Today">
          <effect>
@@ -55,7 +54,7 @@
                   <Bloom />
                </bumpInput>
                <light>
-                  <Light.Distant />
+
                </light>
             </Lighting>
          </effect>
@@ -75,6 +74,11 @@
             <Font size="26.0" />
          </font>
       </Text>
+      <ImageView fitHeight="334.0" fitWidth="1156.0" layoutX="72.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Group 1.png" />
+         </image>
+      </ImageView>
    </children>
    <effect>
       <Blend />
