@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.EmployeeController">
+   <children>
+      <ImageView fitHeight="808.0" fitWidth="1249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/2.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#fffcf187" height="731.0" layoutX="3.0" layoutY="37.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1195.0" />
+      <JFXButton layoutX="55.0" layoutY="59.0" onAction="#backbtnEmployeeform" prefHeight="37.0" prefWidth="179.0" style="-fx-background-color: black;" text="    Back" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="25.0" fitWidth="63.0" layoutX="86.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Vector.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="73.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID *  :" wrappingWidth="153.33665466308594">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="72.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name *  :" wrappingWidth="94.66999816894531">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC *  :" wrappingWidth="71.00249862670898">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="72.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address *  :" wrappingWidth="108.53669738769531">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <JFXTextField layoutX="233.0" layoutY="162.0" prefHeight="40.0" prefWidth="263.0" promptText="   EMP-0001">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField layoutX="173.0" layoutY="217.0" prefHeight="40.0" prefWidth="323.0" promptText="   Employer name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField layoutX="152.0" layoutY="267.0" prefHeight="40.0" prefWidth="344.0" promptText="   Employer NIC">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField layoutX="183.0" layoutY="325.0" prefHeight="40.0" prefWidth="307.0" promptText="   Employer address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="557.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank account number *  :" wrappingWidth="235.19999999999982">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="557.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact *  :" wrappingWidth="104.26997375488281">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="557.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank branch name *  :" wrappingWidth="210.39999999999998">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <JFXTextField layoutX="666.0" layoutY="220.0" prefHeight="40.0" prefWidth="436.0" promptText="   Employer phone number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField layoutX="782.0" layoutY="261.0" prefHeight="40.0" prefWidth="319.0" promptText="   xxxx  -  xxxx  -  xxxx">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField layoutX="765.0" layoutY="323.0" prefHeight="40.0" prefWidth="337.0" promptText="   Branch name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Text layoutX="557.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of birth *  :" wrappingWidth="153.33665466308594">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <JFXTextField layoutX="715.0" layoutY="168.0" prefHeight="40.0" prefWidth="386.0" promptText="   YYYY - MM -DD">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="825.0" layoutY="380.0" onAction="#ClearbtnEmployeeform" prefHeight="4.0" prefWidth="123.0" style="-fx-background-color: black;" text="Clear" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="982.0" layoutY="380.0" onAction="#SavebtnEmployeeform" prefHeight="4.0" prefWidth="123.0" style="-fx-background-color: black;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="8.0" layoutY="454.0" prefHeight="303.0" prefWidth="1184.0">
+        <columns>
+          <TableColumn prefWidth="100.79996681213379" text="ID" />
+            <TableColumn prefWidth="180.5333251953125" text="NAME" />
+            <TableColumn prefWidth="169.59991455078125" text="NIC" />
+            <TableColumn prefWidth="163.73330688476562" text="DOB" />
+            <TableColumn prefWidth="163.466552734375" text="ADDRESS" />
+            <TableColumn prefWidth="154.39990234375" text="CONTACT" />
+            <TableColumn prefWidth="127.20001220703125" text="BANK BRANCH" />
+            <TableColumn prefWidth="121.5999755859375" text="Option" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
